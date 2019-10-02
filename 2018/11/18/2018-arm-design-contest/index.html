@@ -8,7 +8,7 @@
   <title>2018 Arm Design Contest心路歷程 | BoBoSheep World</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="description" content="比賽緣起今年5、6月的時候跟專題組員開始參加了這個為期約3到4個月的比賽。比賽內容主要就是要用他們提供的開發版做一個能促進智慧生活的作品，而身為資工系幾乎沒碰過開發版的我當然會覺得怕怕的，那為什麼會參加呢？因為專題老師就說把專題的東西拿去參加弄個第一名回來，心裡面當然就是挖靠，但不過那時想一想比個賽若能拿個名次對推甄也是不錯的，所以也就開始了這條不歸路。 這次比賽提供的開發版是意法半導體(STMi">
-<meta name="keywords" content="Arm Design Contest,STM32F469,Voice Conversion">
+<meta name="keywords" content="Arm Design Contest,STM32F469,Voice Conversion,柯南領結,變聲器">
 <meta property="og:type" content="article">
 <meta property="og:title" content="2018 Arm Design Contest心路歷程">
 <meta property="og:url" content="https://bobosheep.github.io/2018/11/18/2018-arm-design-contest/index.html">
@@ -16,7 +16,7 @@
 <meta property="og:description" content="比賽緣起今年5、6月的時候跟專題組員開始參加了這個為期約3到4個月的比賽。比賽內容主要就是要用他們提供的開發版做一個能促進智慧生活的作品，而身為資工系幾乎沒碰過開發版的我當然會覺得怕怕的，那為什麼會參加呢？因為專題老師就說把專題的東西拿去參加弄個第一名回來，心裡面當然就是挖靠，但不過那時想一想比個賽若能拿個名次對推甄也是不錯的，所以也就開始了這條不歸路。 這次比賽提供的開發版是意法半導體(STMi">
 <meta property="og:locale" content="en">
 <meta property="og:image" content="https://www.st.com/content/ccc/fragment/product_related/rpn_information/board_photo/group0/e0/b4/a0/64/2f/ff/40/c7/stm32f469i-disco.jpg/files/stm32f469i-disco.jpg/_jcr_content/translations/en.stm32f469i-disco.jpg">
-<meta property="og:updated_time" content="2019-10-02T14:56:37.355Z">
+<meta property="og:updated_time" content="2019-10-02T15:18:44.150Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="2018 Arm Design Contest心路歷程">
 <meta name="twitter:description" content="比賽緣起今年5、6月的時候跟專題組員開始參加了這個為期約3到4個月的比賽。比賽內容主要就是要用他們提供的開發版做一個能促進智慧生活的作品，而身為資工系幾乎沒碰過開發版的我當然會覺得怕怕的，那為什麼會參加呢？因為專題老師就說把專題的東西拿去參加弄個第一名回來，心裡面當然就是挖靠，但不過那時想一想比個賽若能拿個名次對推甄也是不錯的，所以也就開始了這條不歸路。 這次比賽提供的開發版是意法半導體(STMi">
@@ -78,7 +78,7 @@
 </a>
     
   <div class="article-category">
-    <a class="article-category-link" href="/categories/中正大學/">中正大學</a>►<a class="article-category-link" href="/categories/中正大學/比賽/">比賽</a>►<a class="article-category-link" href="/categories/中正大學/比賽/資工系/">資工系</a>
+    <a class="article-category-link" href="/categories/比賽/">比賽</a>
   </div>
 
   </div>
@@ -99,16 +99,21 @@
       
         <h1 id="比賽緣起"><a href="#比賽緣起" class="headerlink" title="比賽緣起"></a>比賽緣起</h1><p>今年5、6月的時候跟專題組員開始參加了這個為期約3到4個月的比賽。比賽內容主要就是要用他們提供的開發版做一個能促進智慧生活的作品，而身為資工系幾乎沒碰過開發版的我當然會覺得怕怕的，那為什麼會參加呢？因為專題老師就說把專題的東西拿去參加弄個第一名回來，心裡面當然就是挖靠，但不過那時想一想比個賽若能拿個名次對推甄也是不錯的，所以也就開始了這條不歸路。 這次比賽提供的開發版是意法半導體(STMicroelectronics)下的STM32F469 (如圖一，官網<a href="https://www.st.com/en/evaluation-tools/32f469idiscovery.html" target="_blank" rel="noopener">連結</a>)，一個基於ARM Cortex M4低功耗開發版。比賽會提供一天的訓練課程教(分南北兩區)你如何用他們提供的開發軟體做開發，但是在去這個課程以前，教授就先幫我們買了幾塊開發版叫我們要開始開發，一個偷跑的概念XD 。一開始看到可以用C去做軟體開發，覺得”哇! 應該不會太困難”，結果去參考一下一些範例程式時，怎麼好像有點陌生了(?)，好多看不太懂的code，到後面才了解原來是一些硬體操控的部分。第一次碰這個還真的有些難度，許多問題不像之前PC開發，Stack Overflow找一下就有了，可能要特定幾個論壇的文章才找的到。 <img src="https://www.st.com/content/ccc/fragment/product_related/rpn_information/board_photo/group0/e0/b4/a0/64/2f/ff/40/c7/stm32f469i-disco.jpg/files/stm32f469i-disco.jpg/_jcr_content/translations/en.stm32f469i-disco.jpg" alt></p>
 <p>圖一 STM32F469實體圖</p>
-<h1 id="初賽之路"><a href="#初賽之路" class="headerlink" title="初賽之路"></a>初賽之路</h1><p>在去比賽提供的教學課程前，我們做的東西已經遇到一些想問的問題了，而且想說到那裏應該也可以再學到不錯的東西。到了那邊以後，他的課程我發現不會的東西還是聽不太懂(硬體電路的port)，不過因為我們比較少用到那部分所以想說應該還好，中間最爽的是他們有有獎徵答，第一題題目真的蠻簡單的，然後竟然送了ASUS的行動電源(10050mAh)上面還有印Arm的字樣，拿了這個就覺得這趟值得了，而且大家看到獎品是這個也開始踴躍回答，不過這獎品只有三個，呵呵。不過我們參加課程最主要的目的是要問我們的問題(我們的問題是如何連上wifi，他們課程只有說如何當AP)，但是兩位工程師講解的工程師卻沒有做過相關的開發，所以當下也沒辦法幫我們解決，而我們只能回去靠自己了。 先說初賽要繳交的項目是<strong>文件</strong>以及<strong>實作影片</strong>。從課程結束到繳交大概就是3個月的時間，時間真的要好好規劃，分工也是要好好分QAQ。我們前面大概兩個禮拜有別的報告要忙所以沒甚麼進展，大概就是畫好GUI，能夠觸控。中間兩個月就全力拚了(有嗎?)，我們在開發版上最一開始就只需要錄音、上傳下載、播音，把錄到的聲音存在記憶體然後傳給Server，再接收回來處理過的聲音做播音。但是一切想得有點美好，wifi的問題特別多，不知道為什麼Bug會一直出現，一開始由某隊員寫這邊的code，寫一寫問題就開始冒出來了，連線到一半當機、response的資料大一點(大概才幾KB)也掛掉。然後他完全沒有頭緒的Debug，到後來換個人力幫忙Debug，看了原本那個隊員寫的code後就爆氣了，一大堆問題，於是他決定自己重新寫那部分的code，然後一個月就這樣過去了QQ。解決了90%的連線Bug，剩下一個我們目前還是無解的問題，就是有時候code的改一改(最誇張的時候是只有加一行變數)，傳輸音檔時就會卡在第二個(整個音檔會分成許多個小檔案傳送，固定死在那個)。而中間有一次的技術諮詢，我們問了工程師他也不太清楚這個問題點在哪裡，感覺要trace到很底層才有可能會知道。 剩下一個半月的時間，一個月在處理wifi、錄音跟GUI的整合，最後就是處理影片和文件。首先整合 wifi 跟錄音就又有很多問題了。先說wifi是在FreeRTOS上運作的，而錄音的code是沒有OS的，所以我們是打算把錄音的 code 合進 wifi 那支 code 裡面，合進去錄音部分馬上就掛了，原本雙聲道的音檔，播出來的感覺像是快轉一樣，直接被嚇死。開始去Debug，覺得應該是 frequency 或是雙聲道播到單聲道的音檔了，結果好像都不是，然後這個問題又卡了兩三天，突然覺得應該是底層的 code 影響的，赫然發現兩邊底層的code版本不一樣?! wifi那邊的比較舊，於是把那邊改成新版的問題就解決了! 感覺這問題不應該卡這麼久…不過已經解決了就不跟他計較。最後就只剩跟GUI合併囉，但發現更困難，因為我們GUI是用專門設計GUI軟體開發的，整個檔案結構都不太一樣，合併就又出問題了，只好放棄這條路了，重新手劃頁面，當然畫面就醜很多了，但沒辦法只能這樣了，畫面當然也被老師噹了好幾次。 當所有程式都弄好了，距離繳交出賽資料也只剩兩個禮拜左右了，當然就開始處理最重要的拍影片還有文件撰寫。文件應該算第一次寫這種比賽的文件，給老師過目不下十次，每次幾乎都是大改，主要負責的同學也覺得心累。而影片也是先把腳本內容給老師看，大概改了兩三次就開始拍版本一的影片，結果當然是問題很多，幾乎很多段都重拍了，那時候差不多是開學前一個禮拜，大家開始有些事情了(好像是我事情最多XDD)，很難喬一個拍攝時間，所以拖了一個禮拜才出來，好險老師好像還蠻滿意第二版，所以影片部分比較順利一些。 初賽的部分就到這裡了。才沒有!文件內容我們在繳交前一天才改完，那時候差不多凌晨三點ㄅ，然後我最後一個改的，改完就上傳，然後心安的去睡了。結果到繳交日截止時間(中午12點)前十分鐘，主辦單位好心提醒我們上傳的檔案格式是錯的!然後最後改版完的文件只有我的電腦有(傻眼)。當下我超緊張的，那時剛還在辦別的事情，收到這個訊息的時侯，還好身上帶著電腦，還好有位子可以給我用。幸好在最後5分鐘完成了，完全是在跟時間賽跑。</p>
-<h1 id="邁向決賽"><a href="#邁向決賽" class="headerlink" title="邁向決賽"></a>邁向決賽</h1><p>初賽繳交結束到成績出來大概隔兩個禮拜吧，這時間大概休息了一下開學事情也還蠻多的，而且還要準備研究所推甄的東西，所以這段期間沒甚麼進度，就乖乖等成績出來哈哈哈。我們都是很有信心可以進決賽，沒甚麼再擔心，結果也如我們預期出來進了決賽。而出來後還有一個是要比人氣獎的活動，主辦單位會把每組的影片丟到粉絲專頁，然後過個十天看誰的留言和分享總和最多就可以獲得最佳人氣獎。然而我們這組大概只有我有在宣傳吧，分享數大概就四十幾，我認識的大概快三十個……好在這不是我們的目標，前兩名的分享數都到了兩三百左右。這個比完大概就是最後的口頭報告及作品展示，然後我們最後也在試著演練Demo的部分。 我們作品主要是做聲音轉換，而原先只有轉換一個目標的聲音，老師覺得太少了(我們其實也覺得)，所以只好再多轉一個目標。我們就在比賽前五天左右吧，快速的再訓練出一個模型可以轉換成另一個目標，一開始挑了蠟筆小新，結果效果不是很好，所以又重新找了一個。想了許多知名藝人和卡通人物，老師覺得既然是要給評審聽的，那就轉科技部部長吧，於是我們就又訓練了一次(累死了QQ)。好在我的轉換效果還不錯，同組組員的就時好時壞，所以最後決定主要是用我的聲音做轉換，需要時再用同組組員做轉換。 到了比賽當天，超緊張的！第一次參加這種大型比賽，而且還有專業攝影師會幫我們拍照，還會錄製作品簡介影片！一開始再準備展示的時候，差點嚇死了。我們展示的部分中包括了youtube，結果好死不死，平常沒甚麼事的youtube竟然掛了……覺得超級雖，這種事都會被我們遇到，好險厲害的Google過了大概三十分鐘到一小時把它修好了(謝天謝地)。接下來就是各組論流到一間會議室報告，全部報告完後，評審們就一組一組的去看Demo。我們的報告和Demo都算順利的結束，覺得應該有機會進前三吧。 決賽結束後一兩天，結果就出爐了，結果只有佳作，有些難過，畢竟也花了很多時間及心力去做這項作品，不過樂觀的看，有獎比沒獎好了。最後就只能以佳作作為這段回憶的收尾，經歷了一段特別的比賽之旅，不過開心的是這也是我們這組的專題，同時做完也是不錯的！ 希望以後有參加的人，可以拿下好成績，並好好享受這段回憶。</p>
+<h1 id="初賽之路"><a href="#初賽之路" class="headerlink" title="初賽之路"></a>初賽之路</h1><p>在去比賽提供的教學課程前，我們做的東西已經遇到一些想問的問題了，而且想說到那裏應該也可以再學到不錯的東西。到了那邊以後，他的課程我發現不會的東西還是聽不太懂(硬體電路的port)，不過因為我們比較少用到那部分所以想說應該還好，中間最爽的是他們有有獎徵答，第一題題目真的蠻簡單的，然後竟然送了ASUS的行動電源(10050mAh)上面還有印Arm的字樣，拿了這個就覺得這趟值得了，而且大家看到獎品是這個也開始踴躍回答，不過這獎品只有三個，呵呵。不過我們參加課程最主要的目的是要問我們的問題(我們的問題是如何連上wifi，他們課程只有說如何當AP)，但是兩位工程師講解的工程師卻沒有做過相關的開發，所以當下也沒辦法幫我們解決，而我們只能回去靠自己了。 </p>
+<p>先說初賽要繳交的項目是<strong>文件</strong>以及<strong>實作影片</strong>。從課程結束到繳交大概就是3個月的時間，時間真的要好好規劃，分工也是要好好分QAQ。我們前面大概兩個禮拜有別的報告要忙所以沒甚麼進展，大概就是畫好GUI，能夠觸控。中間兩個月就全力拚了(有嗎?)，我們在開發版上最一開始就只需要錄音、上傳下載、播音，把錄到的聲音存在記憶體然後傳給Server，再接收回來處理過的聲音做播音。但是一切想得有點美好，wifi的問題特別多，不知道為什麼Bug會一直出現，一開始由某隊員寫這邊的code，寫一寫問題就開始冒出來了，連線到一半當機、response的資料大一點(大概才幾KB)也掛掉。然後他完全沒有頭緒的Debug，到後來換個人力幫忙Debug，看了原本那個隊員寫的code後就爆氣了，一大堆問題，於是他決定自己重新寫那部分的code，然後一個月就這樣過去了QQ。</p>
+<p>解決了90%連線的Bug，剩下一個我們目前還是無解的問題，就是有時候code的改一改(最誇張的時候是只有加一行變數)，傳輸音檔時就會卡在第二個(整個音檔會分成許多個小檔案傳送，固定死在那個)。而中間有一次的技術諮詢，我們問了工程師他也不太清楚這個問題點在哪裡，感覺要trace到很底層才有可能會知道。 剩下一個半月的時間，一個月在處理wifi、錄音跟GUI的整合，最後就是處理影片和文件。首先整合 wifi 跟錄音就又有很多問題了。先說wifi是在FreeRTOS上運作的，而錄音的code是沒有OS的，所以我們是打算把錄音的 code 合進 wifi 那支 code 裡面，合進去錄音部分馬上就掛了，原本雙聲道的音檔，播出來的感覺像是快轉一樣，直接被嚇死。開始去Debug，覺得應該是 frequency 或是雙聲道播到單聲道的音檔了，結果好像都不是，然後這個問題又卡了兩三天，突然覺得應該是底層的 code 影響的，赫然發現兩邊底層的code版本不一樣?! wifi那邊的比較舊，於是把那邊改成新版的問題就解決了! 感覺這問題不應該卡這麼久…不過已經解決了就不跟他計較。最後就只剩跟GUI合併囉，但發現更困難，因為我們GUI是用專門設計GUI軟體開發的，整個檔案結構都不太一樣，合併就又出問題了，只好放棄這條路了，重新手劃頁面，當然畫面就醜很多了，但沒辦法只能這樣了，畫面當然也被老師噹了好幾次。 </p>
+<p>當所有程式都弄好了，距離繳交出賽資料也只剩兩個禮拜左右了，當然就開始處理最重要的拍影片還有文件撰寫。文件應該算第一次寫這種比賽的文件，給老師過目不下十次，每次幾乎都是大改，主要負責的同學也覺得心累。而影片也是先把腳本內容給老師看，大概改了兩三次就開始拍版本一的影片，結果當然是問題很多，幾乎很多段都重拍了，那時候差不多是開學前一個禮拜，大家開始有些事情了(好像是我事情最多XDD)，很難喬一個拍攝時間，所以拖了一個禮拜才出來，好險老師好像還蠻滿意第二版，所以影片部分比較順利一些。 初賽的部分就到這裡了。才沒有!文件內容我們在繳交前一天才改完，那時候差不多凌晨三點ㄅ，然後我最後一個改的，改完就上傳，然後心安的去睡了。結果到繳交日截止時間(中午12點)前十分鐘，主辦單位好心提醒我們上傳的檔案格式是錯的!然後最後改版完的文件只有我的電腦有(傻眼)。當下我超緊張的，那時剛還在辦別的事情，收到這個訊息的時侯，還好身上帶著電腦，還好有位子可以給我用。幸好在最後5分鐘完成了，完全是在跟時間賽跑。</p>
+<h1 id="邁向決賽"><a href="#邁向決賽" class="headerlink" title="邁向決賽"></a>邁向決賽</h1><p>初賽繳交結束到成績出來大概隔兩個禮拜吧，這時間大概休息了一下開學事情也還蠻多的，而且還要準備研究所推甄的東西，所以這段期間沒甚麼進度，就乖乖等成績出來哈哈哈。我們都是很有信心可以進決賽，沒甚麼再擔心，結果也如我們預期出來進了決賽。而出來後還有一個是要比人氣獎的活動，主辦單位會把每組的影片丟到粉絲專頁，然後過個十天看誰的留言和分享總和最多就可以獲得最佳人氣獎<a href="https://www.facebook.com/ArmTaiwan/videos/336559903761727/" target="_blank" rel="noopener">影片連結</a>。</p>
+<p>我們這組大概只有我有在宣傳吧，分享數大概就四十幾，我認識的大概快三十個……好在這不是我們的目標，前兩名的分享數都到了兩三百左右。這個比完大概就是最後的口頭報告及作品展示，然後我們最後也在試著演練Demo的部分。 我們作品主要是做聲音轉換，而原先只有轉換一個目標的聲音，老師覺得太少了(我們其實也覺得)，所以只好再多轉一個目標。我們就在比賽前五天左右吧，快速的再訓練出一個模型可以轉換成另一個目標，一開始挑了蠟筆小新，結果效果不是很好，所以又重新找了一個。想了許多知名藝人和卡通人物，老師覺得既然是要給評審聽的，那就轉科技部部長吧，於是我們就又訓練了一次(累死了QQ)。好在我的轉換效果還不錯，同組組員的就時好時壞，所以最後決定主要是用我的聲音做轉換，需要時再用同組組員做轉換。 </p>
+<p>到了比賽當天，超緊張的！第一次參加這種大型比賽，而且還有專業攝影師會幫我們拍照，還會錄製作品簡介影片！一開始再準備展示的時候，差點嚇死了。我們展示的部分中包括了youtube，結果好死不死，平常沒甚麼事的youtube竟然掛了……覺得超級雖，這種事都會被我們遇到，好險厲害的Google過了大概三十分鐘到一小時把它修好了(謝天謝地)。接下來就是各組論流到一間會議室報告，全部報告完後，評審們就一組一組的去看Demo。我們的報告和Demo都算順利的結束，覺得應該有機會進前三吧。 決賽結束後一兩天，結果就出爐了，結果只有佳作，有些難過，畢竟也花了很多時間及心力去做這項作品，不過樂觀的看，有獎比沒獎好了。最後就只能以佳作作為這段回憶的收尾，經歷了一段特別的比賽之旅，不過開心的是這也是我們這組的專題，同時做完也是不錯的！ 希望以後有參加的人，可以拿下好成績，並好好享受這段回憶。</p>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://bobosheep.github.io/2018/11/18/2018-arm-design-contest/" data-id="ck19e9fxu001lyhnw1hkuitc8" class="article-share-link">Share</a>
+      <a data-url="https://bobosheep.github.io/2018/11/18/2018-arm-design-contest/" data-id="ck19f1wvc000mwuxxq0hov91x" class="article-share-link">Share</a>
       
       
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Arm-Design-Contest/">Arm Design Contest</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/STM32F469/">STM32F469</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Voice-Conversion/">Voice Conversion</a></li></ul>
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Arm-Design-Contest/">Arm Design Contest</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/STM32F469/">STM32F469</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Voice-Conversion/">Voice Conversion</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/柯南領結/">柯南領結</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/變聲器/">變聲器</a></li></ul>
 
     </footer>
   </div>
@@ -144,7 +149,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">Categories</h3>
     <div class="widget">
-      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/中正大學/">中正大學</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/中正大學/比賽/">比賽</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/中正大學/比賽/資工系/">資工系</a></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/中正大學/畢業季/">畢業季</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/中正大學/畢業季/資工系/">資工系</a></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/中正大學/資工系/">資工系</a></li></ul></li></ul>
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/中正大學/">中正大學</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/中正大學/資工系/">資工系</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/中正大學/資工系/畢業季/">畢業季</a></li></ul></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/比賽/">比賽</a></li></ul>
     </div>
   </div>
 
@@ -154,7 +159,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">Tags</h3>
     <div class="widget">
-      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/Arm-Design-Contest/">Arm Design Contest</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/STM32F469/">STM32F469</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Voice-Conversion/">Voice Conversion</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/大學/">大學</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/畢業/">畢業</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/資工系/">資工系</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/趣事/">趣事</a></li></ul>
+      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/Arm-Design-Contest/">Arm Design Contest</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/STM32F469/">STM32F469</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Voice-Conversion/">Voice Conversion</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/大學/">大學</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/柯南領結/">柯南領結</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/畢業/">畢業</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/變聲器/">變聲器</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/資工系/">資工系</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/趣事/">趣事</a></li></ul>
     </div>
   </div>
 
@@ -164,7 +169,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">Tag Cloud</h3>
     <div class="widget tagcloud">
-      <a href="/tags/Arm-Design-Contest/" style="font-size: 10px;">Arm Design Contest</a> <a href="/tags/STM32F469/" style="font-size: 10px;">STM32F469</a> <a href="/tags/Voice-Conversion/" style="font-size: 10px;">Voice Conversion</a> <a href="/tags/大學/" style="font-size: 10px;">大學</a> <a href="/tags/畢業/" style="font-size: 10px;">畢業</a> <a href="/tags/資工系/" style="font-size: 10px;">資工系</a> <a href="/tags/趣事/" style="font-size: 10px;">趣事</a>
+      <a href="/tags/Arm-Design-Contest/" style="font-size: 10px;">Arm Design Contest</a> <a href="/tags/STM32F469/" style="font-size: 10px;">STM32F469</a> <a href="/tags/Voice-Conversion/" style="font-size: 10px;">Voice Conversion</a> <a href="/tags/大學/" style="font-size: 10px;">大學</a> <a href="/tags/柯南領結/" style="font-size: 10px;">柯南領結</a> <a href="/tags/畢業/" style="font-size: 10px;">畢業</a> <a href="/tags/變聲器/" style="font-size: 10px;">變聲器</a> <a href="/tags/資工系/" style="font-size: 10px;">資工系</a> <a href="/tags/趣事/" style="font-size: 10px;">趣事</a>
     </div>
   </div>
 
