@@ -2,8 +2,6 @@
 title: 大學過了三年......
 tags:
   - 大學
-url: 38.html
-id: 38
 categories:
   - 中正大學
   - 資工系
