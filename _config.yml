@@ -4,11 +4,11 @@
 
 # Site
 title: BoBoSheep World
-subtitle:  生活的點點滴滴
+subtitle:  Something about me and my life
 description: 讓自己留下腳印，為世界盡一點努力 
 keywords: BoBoSheep, Blog, Programming, Coding, Life, Travel, Sport
 author: Ian Tsai (蔡帛洋)
-language: zh-TW
+language: en
 timezone: Asia/Taipei
 
 # URL
@@ -78,7 +78,4 @@ theme: landscape
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
-  type: git
-  repository: http://github.com/bobosheep/bobosheep.github.io.git
-  branch: master
-  
+  type:
