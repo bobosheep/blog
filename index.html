@@ -73,7 +73,7 @@
     <article id="post-hello-world" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2019/10/02/hello-world/" class="article-date">
-  <time datetime="2019-10-02T07:11:34.120Z" itemprop="datePublished">2019-10-02</time>
+  <time datetime="2019-10-01T16:00:00.000Z" itemprop="datePublished">2019-10-02</time>
 </a>
     
   </div>
@@ -84,7 +84,7 @@
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2019/10/02/hello-world/">Hello World</a>
+      <a class="article-title" href="/2019/10/02/hello-world/">使用 Hexo 建立 Github 部落格</a>
     </h1>
   
 
@@ -92,24 +92,45 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
+        <p>今天決定把自己的 blog 建立在 github 上。在網路上查了其他人都如何在 github 建立，發現有很多工具可以使用 ! 在這邊我介紹我今天使用的工具 <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>!</p>
+<h1 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h1><h3 id="環境架設"><a href="#環境架設" class="headerlink" title="環境架設"></a>環境架設</h3><p>下載 Hexo。(首先要有 <a href="https://nodejs.org/en/" target="_blank" rel="noopener">Nodejs</a>)</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm install -g hexo-cli</span><br></pre></td></tr></table></figure>
 
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+<p>下載完後，就可以建立 blog 的資料夾了。</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ hexo init &lt;folder&gt;</span><br><span class="line">$ <span class="built_in">cd</span> &lt;folder&gt;</span><br><span class="line">$ npm install</span><br></pre></td></tr></table></figure>
 
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+<p>資料夾內結構大概看起來長這樣:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">.</span><br><span class="line">├── _config.yml</span><br><span class="line">├── package.json</span><br><span class="line">├── scaffolds</span><br><span class="line">├── source</span><br><span class="line">|   ├── _drafts</span><br><span class="line">|   └── _posts</span><br><span class="line">└── themes</span><br></pre></td></tr></table></figure>
 
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+<p>然後可以先看看網站長如何 (預設 port 4000)</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server [-p port]</span><br></pre></td></tr></table></figure>
 
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
+<p>更多資訊可以參考 <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">官網 server</a></p>
+<p>恭喜我們有一個部落格了。</p>
+<h3 id="基本設定與操作"><a href="#基本設定與操作" class="headerlink" title="基本設定與操作"></a>基本設定與操作</h3><h4 id="設定-config-yml-檔案"><a href="#設定-config-yml-檔案" class="headerlink" title="設定  _config.yml 檔案"></a>設定  _config.yml 檔案</h4><figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">title:</span> <span class="string">&lt;網站首頁標題&gt;</span></span><br><span class="line"><span class="attr">subtitle:</span> <span class="string">&lt;網站首頁子標題&gt;</span></span><br><span class="line"><span class="attr">description:</span> <span class="string">&lt;網站說明，不會顯示出來，只會在</span> <span class="string">html</span> <span class="string">裡&gt;</span></span><br><span class="line"><span class="attr">keywords:</span> <span class="string">&lt;網站關鍵字&gt;</span></span><br><span class="line"><span class="attr">author:</span> <span class="string">&lt;你?&gt;</span></span><br><span class="line"><span class="attr">language:</span> <span class="string">&lt;網站語言，預設</span> <span class="string">en，若要調為繁體中文，則設為</span> <span class="string">zh-TW&gt;</span></span><br><span class="line"><span class="attr">timezonde:</span> <span class="string">&lt;網站的時間區域，如果是台灣的話就設</span> <span class="string">Asia/Taipei&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="string">/**</span></span><br><span class="line"><span class="string">*</span> <span class="string">其他都可以先用預設</span></span><br><span class="line"><span class="string">**/</span></span><br><span class="line"></span><br><span class="line"><span class="string">//</span> <span class="string">這邊介紹可以建立在</span> <span class="string">github</span> <span class="string">page</span> <span class="string">的設定</span></span><br><span class="line"><span class="attr">deploy:</span></span><br><span class="line"><span class="attr">  type:</span> <span class="string">git</span></span><br><span class="line"><span class="attr">  repository:</span> <span class="attr">http://github.com/&lt;your</span> <span class="string">github</span> <span class="string">name&gt;/&lt;repository</span> <span class="string">name&gt;.git</span></span><br><span class="line"><span class="attr">  branch:</span> <span class="string">master</span></span><br></pre></td></tr></table></figure>
+
+<p>其他可以去 <a href="https://hexo.io/docs/configuration" target="_blank" rel="noopener">官網 configuration</a> 看看</p>
+<p>設定完後，可以重新整理網頁(如果你的 hexo server還開著的話)，會發現網頁有些不太一樣，這樣就成功了。</p>
+<h4 id="建立新的文章"><a href="#建立新的文章" class="headerlink" title="建立新的文章"></a>建立新的文章</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new post <span class="string">"你的檔案名稱"</span></span><br></pre></td></tr></table></figure>
+
+<p>command 下完後，可以在 source/_post 裡面看見 “你的檔案名稱.md”，然後就可以開始用 Markdown 語法開始寫作你的文章了。</p>
+<p>寫完之後，你的網站並不會多那篇文章，因為 hexo 還沒幫你產生它的網頁，所以需要打以下指令:</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+
+<p>他就會幫你產生新的網頁，然後一樣重新整理網頁，應該就會有新的文章囉。</p>
+<h3 id="建立在-Github"><a href="#建立在-Github" class="headerlink" title="建立在 Github"></a>建立在 Github</h3><p>hexo 可以透過 git 把你建立完的網頁 push 到你的 repository 裡。</p>
+<p>不過需要先下載 hexo-deployer-git</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-deployer-git --save</span><br></pre></td></tr></table></figure>
+
+<p>下載完後你就可以把你的網頁 deploy 到你的 github page了</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo d -g 	<span class="comment">#他會先 generate 後再 deploy</span></span><br></pre></td></tr></table></figure>
+
+<p>然後恭喜你就可以去 github page看看了!</p>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://bobosheep.github.io/2019/10/02/hello-world/" data-id="ck190i1e7000988us4wgx5619" class="article-share-link">Share</a>
+      <a data-url="https://bobosheep.github.io/2019/10/02/hello-world/" data-id="ck1a2g9wd0000bousdv5ybqwq" class="article-share-link">Share</a>
       
       
     </footer>
@@ -151,7 +172,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://bobosheep.github.io/2018/11/24/graduated/" data-id="ck190i1du000688uszjl5pqkr" class="article-share-link">Share</a>
+      <a data-url="https://bobosheep.github.io/2018/11/24/graduated/" data-id="ck1a2g9wq0003bouswyu4mrpm" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/畢業/">畢業</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/資工系/">資工系</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/趣事/">趣事</a></li></ul>
@@ -202,7 +223,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://bobosheep.github.io/2018/11/18/2018-arm-design-contest/" data-id="ck190i1fn001l88usj1prqk6t" class="article-share-link">Share</a>
+      <a data-url="https://bobosheep.github.io/2018/11/18/2018-arm-design-contest/" data-id="ck1a2g9xb000nbousiabtcr1z" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Arm-Design-Contest/">Arm Design Contest</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/STM32F469/">STM32F469</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Voice-Conversion/">Voice Conversion</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/柯南領結/">柯南領結</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/變聲器/">變聲器</a></li></ul>
@@ -245,7 +266,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://bobosheep.github.io/2018/07/06/threeyear/" data-id="ck190i1e0000788usg5afky7b" class="article-share-link">Share</a>
+      <a data-url="https://bobosheep.github.io/2018/07/06/threeyear/" data-id="ck1a2g9ws0004bousw1jtggm8" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/大學/">大學</a></li></ul>
@@ -309,7 +330,7 @@
       <ul>
         
           <li>
-            <a href="/2019/10/02/hello-world/">Hello World</a>
+            <a href="/2019/10/02/hello-world/">使用 Hexo 建立 Github 部落格</a>
           </li>
         
           <li>
@@ -353,9 +374,6 @@
 
 <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
 
-
-  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
-  <script src="/fancybox/jquery.fancybox.pack.js"></script>
 
 
 <script src="/js/script.js"></script>
