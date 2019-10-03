@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search> 
+  
+  
+    
+    <entry>
+      <title>使用 Hexo 建立 Github 部落格</title>
+      <link href="/2019/10/02/hello-world/"/>
+      <url>/2019/10/02/hello-world/</url>
+      
+        <content type="html"><![CDATA[<p>今天決定把自己的 blog 建立在 github 上。在網路上查了其他人都如何在 github 建立，發現有很多工具可以使用 ! 在這邊我介紹我今天使用的工具 <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>!</p><h1 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h1><h3 id="環境架設"><a href="#環境架設" class="headerlink" title="環境架設"></a>環境架設</h3><p>下載 Hexo。(首先要有 <a href="https://nodejs.org/en/" target="_blank" rel="noopener">Nodejs</a>)</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm install -g hexo-cli</span><br></pre></td></tr></table></figure><p>下載完後，就可以建立 blog 的資料夾了。</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ hexo init &lt;folder&gt;</span><br><span class="line">$ <span class="built_in">cd</span> &lt;folder&gt;</span><br><span class="line">$ npm install</span><br></pre></td></tr></table></figure><p>資料夾內結構大概看起來長這樣:</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">.</span><br><span class="line">├── _config.yml</span><br><span class="line">├── package.json</span><br><span class="line">├── scaffolds</span><br><span class="line">├── source</span><br><span class="line">|   ├── _drafts</span><br><span class="line">|   └── _posts</span><br><span class="line">└── themes</span><br></pre></td></tr></table></figure><p>然後可以先看看網站長如何 (預設 port 4000)</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server [-p port]</span><br></pre></td></tr></table></figure><p>更多資訊可以參考 <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">官網 server</a></p><p>恭喜我們有一個部落格了。</p><h3 id="基本設定與操作"><a href="#基本設定與操作" class="headerlink" title="基本設定與操作"></a>基本設定與操作</h3><h4 id="設定-config-yml-檔案"><a href="#設定-config-yml-檔案" class="headerlink" title="設定  _config.yml 檔案"></a>設定  _config.yml 檔案</h4><figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">title:</span> <span class="string">&lt;網站首頁標題&gt;</span></span><br><span class="line"><span class="attr">subtitle:</span> <span class="string">&lt;網站首頁子標題&gt;</span></span><br><span class="line"><span class="attr">description:</span> <span class="string">&lt;網站說明，不會顯示出來，只會在</span> <span class="string">html</span> <span class="string">裡&gt;</span></span><br><span class="line"><span class="attr">keywords:</span> <span class="string">&lt;網站關鍵字&gt;</span></span><br><span class="line"><span class="attr">author:</span> <span class="string">&lt;你?&gt;</span></span><br><span class="line"><span class="attr">language:</span> <span class="string">&lt;網站語言，預設</span> <span class="string">en，若要調為繁體中文，則設為</span> <span class="string">zh-TW&gt;</span></span><br><span class="line"><span class="attr">timezonde:</span> <span class="string">&lt;網站的時間區域，如果是台灣的話就設</span> <span class="string">Asia/Taipei&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="string">/**</span></span><br><span class="line"><span class="string">*</span> <span class="string">其他都可以先用預設</span></span><br><span class="line"><span class="string">**/</span></span><br><span class="line"></span><br><span class="line"><span class="string">//</span> <span class="string">這邊介紹可以建立在</span> <span class="string">github</span> <span class="string">page</span> <span class="string">的設定</span></span><br><span class="line"><span class="attr">deploy:</span></span><br><span class="line"><span class="attr">  type:</span> <span class="string">git</span></span><br><span class="line"><span class="attr">  repository:</span> <span class="attr">http://github.com/&lt;your</span> <span class="string">github</span> <span class="string">name&gt;/&lt;repository</span> <span class="string">name&gt;.git</span></span><br><span class="line"><span class="attr">  branch:</span> <span class="string">master</span></span><br></pre></td></tr></table></figure><p>其他可以去 <a href="https://hexo.io/docs/configuration" target="_blank" rel="noopener">官網 configuration</a> 看看</p><p>設定完後，可以重新整理網頁(如果你的 hexo server還開著的話)，會發現網頁有些不太一樣，這樣就成功了。</p><h4 id="建立新的文章"><a href="#建立新的文章" class="headerlink" title="建立新的文章"></a>建立新的文章</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new post <span class="string">"你的檔案名稱"</span></span><br></pre></td></tr></table></figure><p>command 下完後，可以在 source/_post 裡面看見 “你的檔案名稱.md”，然後就可以開始用 Markdown 語法開始寫作你的文章了。</p><p>寫完之後，你的網站並不會多那篇文章，因為 hexo 還沒幫你產生它的網頁，所以需要打以下指令:</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure><p>他就會幫你產生新的網頁，然後一樣重新整理網頁，應該就會有新的文章囉。</p><h3 id="建立在-Github"><a href="#建立在-Github" class="headerlink" title="建立在 Github"></a>建立在 Github</h3><p>hexo 可以透過 git 把你建立完的網頁 push 到你的 repository 裡。</p><p>不過需要先下載 hexo-deployer-git</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-deployer-git --save</span><br></pre></td></tr></table></figure><p>下載完後你就可以把你的網頁 deploy 到你的 github page了</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo d -g <span class="comment">#他會先 generate 後再 deploy</span></span><br></pre></td></tr></table></figure><p>然後恭喜你就可以去 github page看看了!</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 小技術分享 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Hexo </tag>
+            
+            <tag> Github page </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>畢業團拍</title>
+      <link href="/2018/11/24/graduated/"/>
+      <url>/2018/11/24/graduated/</url>
+      
+        <content type="html"><![CDATA[<p>11/19 號是我們資工系畢業個人拍照及團體拍照的時間。先說畢業紀念冊的部分好了，原先以為畢業紀念冊是人人都會買的東西，就像高中國中或是小學，幾乎每個人都會訂畢業紀念冊，甚至是在班級上不活躍的人。但是到大學好像又不太一樣了，大學畢冊還有分班冊(系上的)以及年鑑(全校)，而資工系是個大系(約100人左右)，系上的課沒有特別分班上(就選課時自己選老師)所以有很多小群體，整體來說不團結。最後我們班買班冊的只有8個人左右，買年鑑的也差不多(可能認識外系的不多ㄅ)，團體拍照大概也只有27人，人超級少的，比例上也是。 </p><p>我們拍攝時間是下午一點，剛好那天天氣也不錯，所以拍照起來汗流得特別多，但是我的鼻水流的也特別多……時不時打幾個噴嚏鰻不舒服的，為什麼偏偏在拍照的時候過敏呢？拍照流鼻涕超不舒服的，雖然這不是重點。在一開始大家都穿好學士服站在大禮堂前面時，攝影師站在他的相機前幫我們喬位置，喬著喬著突然「砰！」的一聲，大家看到一個人騎著腳踏車撞上了相機的腳架！好險那個人即時把腳架抓住，讓相機沒有摔到地上，不過攝影師馬上衝過去跟她「喂喂，你在做甚麼！騎個腳踏車也會撞上腳架，騎車都不好好看路的」，好在相機沒事，攝影師就讓他走了，不過攝影師還是很生氣，然後對著我們問可不可以比他中指、罵髒話，我們一致點頭XD。我們也覺得撞上腳架蠻誇張，一個那麼明顯的東西在路上也可以撞到。攝影師也說他人生第一次遇到相機被撞，覺得很無言……。 大禮堂部分拍完，剩下就找了三個地點拍，資工館、噴水池以及圖書館前面拍照，這些地方沒有啥有趣的事情就不贅述了。之後就是找時間和同學去拍畢業照了。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 中正大學 </category>
+          
+          <category> 資工系 </category>
+          
+          <category> 畢業季 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 畢業 </tag>
+            
+            <tag> 資工系 </tag>
+            
+            <tag> 趣事 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>2018 Arm Design Contest心路歷程</title>
+      <link href="/2018/11/18/2018-arm-design-contest/"/>
+      <url>/2018/11/18/2018-arm-design-contest/</url>
+      
+        <content type="html"><![CDATA[<h1 id="比賽緣起"><a href="#比賽緣起" class="headerlink" title="比賽緣起"></a>比賽緣起</h1><p>今年5、6月的時候跟專題組員開始參加了這個為期約3到4個月的比賽。比賽內容主要就是要用他們提供的開發版做一個能促進智慧生活的作品，而身為資工系幾乎沒碰過開發版的我當然會覺得怕怕的，那為什麼會參加呢？因為專題老師就說把專題的東西拿去參加弄個第一名回來，心裡面當然就是挖靠，但不過那時想一想比個賽若能拿個名次對推甄也是不錯的，所以也就開始了這條不歸路。 這次比賽提供的開發版是意法半導體(STMicroelectronics)下的STM32F469 (如圖一，官網<a href="https://www.st.com/en/evaluation-tools/32f469idiscovery.html" target="_blank" rel="noopener">連結</a>)，一個基於ARM Cortex M4低功耗開發版。比賽會提供一天的訓練課程教(分南北兩區)你如何用他們提供的開發軟體做開發，但是在去這個課程以前，教授就先幫我們買了幾塊開發版叫我們要開始開發，一個偷跑的概念XD 。一開始看到可以用C去做軟體開發，覺得”哇! 應該不會太困難”，結果去參考一下一些範例程式時，怎麼好像有點陌生了(?)，好多看不太懂的code，到後面才了解原來是一些硬體操控的部分。第一次碰這個還真的有些難度，許多問題不像之前PC開發，Stack Overflow找一下就有了，可能要特定幾個論壇的文章才找的到。 <img src="https://www.st.com/content/ccc/fragment/product_related/rpn_information/board_photo/group0/e0/b4/a0/64/2f/ff/40/c7/stm32f469i-disco.jpg/files/stm32f469i-disco.jpg/_jcr_content/translations/en.stm32f469i-disco.jpg" alt></p><p>圖一 STM32F469實體圖</p><h1 id="初賽之路"><a href="#初賽之路" class="headerlink" title="初賽之路"></a>初賽之路</h1><p>在去比賽提供的教學課程前，我們做的東西已經遇到一些想問的問題了，而且想說到那裏應該也可以再學到不錯的東西。到了那邊以後，他的課程我發現不會的東西還是聽不太懂(硬體電路的port)，不過因為我們比較少用到那部分所以想說應該還好，中間最爽的是他們有有獎徵答，第一題題目真的蠻簡單的，然後竟然送了ASUS的行動電源(10050mAh)上面還有印Arm的字樣，拿了這個就覺得這趟值得了，而且大家看到獎品是這個也開始踴躍回答，不過這獎品只有三個，呵呵。不過我們參加課程最主要的目的是要問我們的問題(我們的問題是如何連上wifi，他們課程只有說如何當AP)，但是兩位工程師講解的工程師卻沒有做過相關的開發，所以當下也沒辦法幫我們解決，而我們只能回去靠自己了。 </p><p>先說初賽要繳交的項目是<strong>文件</strong>以及<strong>實作影片</strong>。從課程結束到繳交大概就是3個月的時間，時間真的要好好規劃，分工也是要好好分QAQ。我們前面大概兩個禮拜有別的報告要忙所以沒甚麼進展，大概就是畫好GUI，能夠觸控。中間兩個月就全力拚了(有嗎?)，我們在開發版上最一開始就只需要錄音、上傳下載、播音，把錄到的聲音存在記憶體然後傳給Server，再接收回來處理過的聲音做播音。但是一切想得有點美好，wifi的問題特別多，不知道為什麼Bug會一直出現，一開始由某隊員寫這邊的code，寫一寫問題就開始冒出來了，連線到一半當機、response的資料大一點(大概才幾KB)也掛掉。然後他完全沒有頭緒的Debug，到後來換個人力幫忙Debug，看了原本那個隊員寫的code後就爆氣了，一大堆問題，於是他決定自己重新寫那部分的code，然後一個月就這樣過去了QQ。</p><p>解決了90%連線的Bug，剩下一個我們目前還是無解的問題，就是有時候code的改一改(最誇張的時候是只有加一行變數)，傳輸音檔時就會卡在第二個(整個音檔會分成許多個小檔案傳送，固定死在那個)。而中間有一次的技術諮詢，我們問了工程師他也不太清楚這個問題點在哪裡，感覺要trace到很底層才有可能會知道。 剩下一個半月的時間，一個月在處理wifi、錄音跟GUI的整合，最後就是處理影片和文件。首先整合 wifi 跟錄音就又有很多問題了。先說wifi是在FreeRTOS上運作的，而錄音的code是沒有OS的，所以我們是打算把錄音的 code 合進 wifi 那支 code 裡面，合進去錄音部分馬上就掛了，原本雙聲道的音檔，播出來的感覺像是快轉一樣，直接被嚇死。開始去Debug，覺得應該是 frequency 或是雙聲道播到單聲道的音檔了，結果好像都不是，然後這個問題又卡了兩三天，突然覺得應該是底層的 code 影響的，赫然發現兩邊底層的code版本不一樣?! wifi那邊的比較舊，於是把那邊改成新版的問題就解決了! 感覺這問題不應該卡這麼久…不過已經解決了就不跟他計較。最後就只剩跟GUI合併囉，但發現更困難，因為我們GUI是用專門設計GUI軟體開發的，整個檔案結構都不太一樣，合併就又出問題了，只好放棄這條路了，重新手劃頁面，當然畫面就醜很多了，但沒辦法只能這樣了，畫面當然也被老師噹了好幾次。 </p><p>當所有程式都弄好了，距離繳交出賽資料也只剩兩個禮拜左右了，當然就開始處理最重要的拍影片還有文件撰寫。文件應該算第一次寫這種比賽的文件，給老師過目不下十次，每次幾乎都是大改，主要負責的同學也覺得心累。而影片也是先把腳本內容給老師看，大概改了兩三次就開始拍版本一的影片，結果當然是問題很多，幾乎很多段都重拍了，那時候差不多是開學前一個禮拜，大家開始有些事情了(好像是我事情最多XDD)，很難喬一個拍攝時間，所以拖了一個禮拜才出來，好險老師好像還蠻滿意第二版，所以影片部分比較順利一些。 初賽的部分就到這裡了。才沒有!文件內容我們在繳交前一天才改完，那時候差不多凌晨三點ㄅ，然後我最後一個改的，改完就上傳，然後心安的去睡了。結果到繳交日截止時間(中午12點)前十分鐘，主辦單位好心提醒我們上傳的檔案格式是錯的!然後最後改版完的文件只有我的電腦有(傻眼)。當下我超緊張的，那時剛還在辦別的事情，收到這個訊息的時侯，還好身上帶著電腦，還好有位子可以給我用。幸好在最後5分鐘完成了，完全是在跟時間賽跑。</p><h1 id="邁向決賽"><a href="#邁向決賽" class="headerlink" title="邁向決賽"></a>邁向決賽</h1><p>初賽繳交結束到成績出來大概隔兩個禮拜吧，這時間大概休息了一下開學事情也還蠻多的，而且還要準備研究所推甄的東西，所以這段期間沒甚麼進度，就乖乖等成績出來哈哈哈。我們都是很有信心可以進決賽，沒甚麼再擔心，結果也如我們預期出來進了決賽。而出來後還有一個是要比人氣獎的活動，主辦單位會把每組的影片丟到粉絲專頁，然後過個十天看誰的留言和分享總和最多就可以獲得最佳人氣獎<a href="https://www.facebook.com/ArmTaiwan/videos/336559903761727/" target="_blank" rel="noopener">影片連結</a>。</p><p>我們這組大概只有我有在宣傳吧，分享數大概就四十幾，我認識的大概快三十個……好在這不是我們的目標，前兩名的分享數都到了兩三百左右。這個比完大概就是最後的口頭報告及作品展示，然後我們最後也在試著演練Demo的部分。 我們作品主要是做聲音轉換，而原先只有轉換一個目標的聲音，老師覺得太少了(我們其實也覺得)，所以只好再多轉一個目標。我們就在比賽前五天左右吧，快速的再訓練出一個模型可以轉換成另一個目標，一開始挑了蠟筆小新，結果效果不是很好，所以又重新找了一個。想了許多知名藝人和卡通人物，老師覺得既然是要給評審聽的，那就轉科技部部長吧，於是我們就又訓練了一次(累死了QQ)。好在我的轉換效果還不錯，同組組員的就時好時壞，所以最後決定主要是用我的聲音做轉換，需要時再用同組組員做轉換。 </p><p>到了比賽當天，超緊張的！第一次參加這種大型比賽，而且還有專業攝影師會幫我們拍照，還會錄製作品簡介影片！一開始再準備展示的時候，差點嚇死了。我們展示的部分中包括了youtube，結果好死不死，平常沒甚麼事的youtube竟然掛了……覺得超級雖，這種事都會被我們遇到，好險厲害的Google過了大概三十分鐘到一小時把它修好了(謝天謝地)。接下來就是各組論流到一間會議室報告，全部報告完後，評審們就一組一組的去看Demo。我們的報告和Demo都算順利的結束，覺得應該有機會進前三吧。 決賽結束後一兩天，結果就出爐了，結果只有佳作，有些難過，畢竟也花了很多時間及心力去做這項作品，不過樂觀的看，有獎比沒獎好了。最後就只能以佳作作為這段回憶的收尾，經歷了一段特別的比賽之旅，不過開心的是這也是我們這組的專題，同時做完也是不錯的！ 希望以後有參加的人，可以拿下好成績，並好好享受這段回憶。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 比賽 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Arm Design Contest </tag>
+            
+            <tag> STM32F469 </tag>
+            
+            <tag> Voice Conversion </tag>
+            
+            <tag> 柯南領結 </tag>
+            
+            <tag> 變聲器 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>大學過了三年......</title>
+      <link href="/2018/07/06/threeyear/"/>
+      <url>/2018/07/06/threeyear/</url>
+      
+        <content type="html"><![CDATA[<p>大學過了三年，準備要開始最後一年了。自己的Blog才剛弄好，一切都覺得有點晚了，但說實在許多事只就要開始做了就永遠不嫌晚。共勉之。 順便說說這學期修課應該是收穫最多的吧，每個禮拜專題的壓榨，研究所的課的各種project，辛苦總有收穫的，有機會的話，我會說說修課心得的。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 中正大學 </category>
+          
+          <category> 資工系 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 大學 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+  
+  
+</search>
