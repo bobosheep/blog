@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://bobosheep.github.io/"/>
-  <updated>2019-10-03T02:23:52.437Z</updated>
+  <updated>2019-10-04T09:04:37.248Z</updated>
   <id>https://bobosheep.github.io/</id>
   
   <author>
@@ -17,11 +17,43 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>C語言教學 基礎篇</title>
+    <link href="https://bobosheep.github.io/2019/10/03/C-education-1/"/>
+    <id>https://bobosheep.github.io/2019/10/03/C-education-1/</id>
+    <published>2019-10-03T13:44:42.000Z</published>
+    <updated>2019-10-04T09:04:37.248Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;Hello-world&quot;&gt;&lt;a href=&quot;#Hello-world&quot; class=&quot;headerlink&quot; title=&quot;Hello world&quot;&gt;&lt;/a&gt;Hello world&lt;/h1&gt;&lt;p&gt;先從最簡單的 C 程式碼說起&lt;/p&gt;
+&lt;figure
+        
+      
+    
+    </summary>
+    
+    
+      <category term="教學" scheme="https://bobosheep.github.io/categories/%E6%95%99%E5%AD%B8/"/>
+    
+      <category term="程式" scheme="https://bobosheep.github.io/categories/%E6%95%99%E5%AD%B8/%E7%A8%8B%E5%BC%8F/"/>
+    
+    
+      <category term="c language" scheme="https://bobosheep.github.io/tags/c-language/"/>
+    
+      <category term="learning" scheme="https://bobosheep.github.io/tags/learning/"/>
+    
+  </entry>
+  
+  <entry>
     <title>使用 Hexo 建立 Github 部落格</title>
     <link href="https://bobosheep.github.io/2019/10/02/hello-world/"/>
     <id>https://bobosheep.github.io/2019/10/02/hello-world/</id>
     <published>2019-10-01T16:00:00.000Z</published>
-    <updated>2019-10-03T02:23:52.437Z</updated>
+    <updated>2019-10-03T13:37:04.600Z</updated>
     
     <summary type="html">
     
