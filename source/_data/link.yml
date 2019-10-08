@@ -1,0 +1,9 @@
+class:
+  class_name: 我的相關連結
+  link_list:
+      1:
+        name: 綿羊趴趴走
+        link: https://bobosheep-travel.blogspot.com/
+        avatar: https://bobosheep.github.io/img/selfie.jpg
+        descr: 綿羊旅遊分享，歡迎點閱
+        

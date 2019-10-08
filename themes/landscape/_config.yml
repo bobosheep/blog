@@ -3,6 +3,8 @@ menu:
   Home: /
   Archives: /archives
 rss: /atom.xml
+google_plus: https://aboutme.google.com/u/0/?referer=gplus
+fb_app_id: https://www.facebook.com/bobosheep0727
 
 # Content
 excerpt_link: Read More
@@ -10,11 +12,11 @@ excerpt_link: Read More
 # Sidebar
 sidebar: right
 widgets:
-- category
-- tag
-- tagcloud
 - archive
+- category
 - recent_posts
+- tagcloud
+- tag
 
 # display widgets at the bottom of index pages (pagination == 2)
 index_widgets:
@@ -27,10 +29,16 @@ archive_type: 'monthly'
 show_count: false
 
 # Miscellaneous
-google_analytics:
+google_analytics: UA-118765543-4
 gauges_analytics:
 favicon: /favicon.png
 twitter:
-google_plus:
+google_plus: #https://aboutme.google.com/u/0/?referer=gplus
 fb_admins:
-fb_app_id:
+fb_app_id: #https://www.facebook.com/bobosheep0727
+
+social:
+  #Google: https://plus.google.com/yourname || google
+  #Twitter: https://twitter.com/yourname || twitter
+  FB Page: https://www.facebook.com/larrynote || facebook
+
