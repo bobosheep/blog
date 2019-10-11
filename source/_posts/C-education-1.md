@@ -1,12 +1,15 @@
 ---
-title: C 語言教學 入門篇
+title: 【入門】C 語言教學
 date: 2019-10-03 21:44:42
 tags: 
 	- C
 	- learning
+	- programming
 categories:
 	- 教學
 	- 程式
+keywords: hello world, c, input, output, variable
+cover: https://masterprograming.com/wp-content/uploads/2019/03/c-programming-e1536069688313.png
 ---
 
 # Hello world

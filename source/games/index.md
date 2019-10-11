@@ -19,6 +19,15 @@ date: 2019-10-04 14:41:46
 
 # 荒野亂鬥
 
+【2019/10/08】里昂破紀錄，28 星！
+
+<iframe width="600" height="400" src="https://www.youtube.com/embed/1_M1zmKOyxc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+【2019/10/08】獵星大亂鬥，獵獵獵了26星！
+
+<iframe width="600" height="400" src="https://www.youtube.com/embed/2htyvAoBnxA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
 【2019/09/26】不探草叢的雪莉? 哈哈
 
 <iframe width="600" height="400" src="https://www.youtube.com/embed/ZEugHoQz654?list=PLfOeYfd9wpJdtsAMHOHfz9pPQeQoxqXaE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -26,7 +35,6 @@ date: 2019-10-04 14:41:46
 【2019/10/02】又一個白癡雪莉?直接被殘血的我反殺
 
 <iframe width="600" height="400" src="https://www.youtube.com/embed/V4m8cV8U6OI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
 ---
 
 
@@ -36,7 +44,6 @@ date: 2019-10-04 14:41:46
  【2019/02/09】曾經的高分
 
 <iframe width="600" height="400" src="https://www.youtube.com/embed/fg8cLiQ4p6k?list=PLfOeYfd9wpJeR_kb39Wl3d_7ny2BA_g48" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
 ----
 
 
@@ -46,23 +53,18 @@ date: 2019-10-04 14:41:46
 【2018/01/19】
 
 <iframe width="600" height="400" src="https://www.youtube.com/embed/YE5xPTwTdXI?list=PLfOeYfd9wpJcayhjpSAOT3EkgZ3UmJpeQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
 【2018/01/15】
 
 <iframe width="600" height="400" src="https://www.youtube.com/embed/t6GwHQiLepw?list=PLfOeYfd9wpJcayhjpSAOT3EkgZ3UmJpeQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
 【2018/01/15】
 
 <iframe width="600" height="400" src="https://www.youtube.com/embed/9EEy5MDPO7A" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
 【2018/01/15】
 
 <iframe width="600" height="400" src="https://www.youtube.com/embed/zVtl0lA2T4s?list=PLfOeYfd9wpJcayhjpSAOT3EkgZ3UmJpeQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
 【2017/06/30】
 
 <iframe width="600" height="400" src="https://www.youtube.com/embed/UphHmQPp5BI?list=PLfOeYfd9wpJcayhjpSAOT3EkgZ3UmJpeQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
 ---
 
 
@@ -75,3 +77,14 @@ date: 2019-10-04 14:41:46
 
 ---
 
+【2018/06/19 】- 生存模式 survival mode 1/70 - BoBosheep
+
+<iframe width="600" height="400" src="https://www.youtube.com/embed/RRWjNx26J-I?list=PLfOeYfd9wpJcPQm8mG6wrntExGVJA4rTp" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+【2018/06/10】 生存模式 survival mode 3/67 - BoBosheep
+
+<iframe width="600" height="400" src="https://www.youtube.com/embed/bunnhAsRyXE?list=PLfOeYfd9wpJcPQm8mG6wrntExGVJA4rTp" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+【2018/05/27】 生存模式 survival mode 1/50 - BoBosheep
+
+<iframe width="600" height="400" src="https://www.youtube.com/embed/rsC6oNVInzs?list=PLfOeYfd9wpJcPQm8mG6wrntExGVJA4rTp" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>

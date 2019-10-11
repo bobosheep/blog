@@ -1,11 +1,12 @@
 ---
-title: 使用 Hexo 建立 Github 部落格
+title: 使用 Hexo 快速建立 Github 部落格
 date: 2019-10-02 
 tags: 
   - Hexo
   - Github page
 categories:
   - 小技術分享
+cover: https://lh3.google.com/u/2/d/1K7wmM7pS5pz5CD4Ej-oTDzGPR9JZezpT=w1918-h892-iv1
 ---
 今天決定把自己的 blog 建立在 github 上。在網路上查了其他人都如何在 github 建立，發現有很多工具可以使用 ! 在這邊我介紹我今天使用的工具 [Hexo](https://hexo.io/)!
 
@@ -33,13 +34,13 @@ $ npm install
 |   └── _posts
 └── themes
 ```
-然後可以先看看網站長如何 (預設 port 4000)
+首先看看網站長如何 (預設 port 4000)
 ```bash
 $ hexo server [-p port]
 ```
 更多資訊可以參考 [官網 server](https://hexo.io/docs/server.html)
 
-恭喜我們有一個部落格了。
+恭喜我們可以開始建立部落格了。
 
 
 
