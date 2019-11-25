@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://bobosheep.github.io/"/>
-  <updated>2019-10-22T14:58:02.114Z</updated>
+  <updated>2019-11-25T17:40:12.358Z</updated>
   <id>https://bobosheep.github.io/</id>
   
   <author>
@@ -15,6 +15,37 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Windows 特別的 EOF：^Z &lt;0x1A&gt;</title>
+    <link href="https://bobosheep.github.io/2019/11/13/eof-in-windows/"/>
+    <id>https://bobosheep.github.io/2019/11/13/eof-in-windows/</id>
+    <published>2019-11-13T09:19:29.000Z</published>
+    <updated>2019-11-25T17:40:12.358Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;Windows-中神奇的字元-Z-替換&quot;&gt;&lt;a href=&quot;#Windows-中神奇的字元-Z-替換&quot; class=&quot;headerlink&quot; title=&quot;Windows 中神奇的字元 :  ^Z (替換)&quot;&gt;&lt;/a&gt;Windows 中神奇的字元 :  ^Z
+        
+      
+    
+    </summary>
+    
+    
+      <category term="程式" scheme="https://bobosheep.github.io/categories/%E7%A8%8B%E5%BC%8F/"/>
+    
+      <category term="C" scheme="https://bobosheep.github.io/categories/%E7%A8%8B%E5%BC%8F/C/"/>
+    
+    
+      <category term="C" scheme="https://bobosheep.github.io/tags/C/"/>
+    
+      <category term="Programming" scheme="https://bobosheep.github.io/tags/Programming/"/>
+    
+  </entry>
   
   <entry>
     <title>【基礎篇】C 語言教學</title>

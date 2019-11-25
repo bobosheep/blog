@@ -4,6 +4,35 @@
   
     
     <entry>
+      <title>Windows 特別的 EOF：^Z &lt;0x1A&gt;</title>
+      <link href="/2019/11/13/eof-in-windows/"/>
+      <url>/2019/11/13/eof-in-windows/</url>
+      
+        <content type="html"><![CDATA[<h1 id="Windows-中神奇的字元-Z-替換"><a href="#Windows-中神奇的字元-Z-替換" class="headerlink" title="Windows 中神奇的字元 :  ^Z (替換)"></a>Windows 中神奇的字元 :  ^Z (替換)</h1><p>在 windows 10 系統中寫 C 程式，真的蠻容易踩雷的。某堂課的作業要處理一個 <code>2 GB</code> 的文字資料，但內容並非純文字，有許多跳脫字元，想說用 <code>fgets</code> 或是 <code>fscanf</code> 應該就可以了，結果處理檔案就一直有問題，資料少很多，想說會不會我不想小心哪裡寫錯了(那時有一陣子沒寫 C code) ，不過我還是先去完成作業的其他部分再來處理這個 。</p><p>作業大致完成後，我首先覺得可能是資料有不乾淨的字元所導致的問題，跟同學討論了一下覺得先處理一些跳脫字元以及非法 Unicode。處理完後，問題依舊還在，然後我再想說不用 <code>fgets</code> 跟 <code>fscanf</code> 改用 <code>fread</code> 會不會就解決了呢？事實發現部會，問題還是在。最後我跟我同學決定把有問題的地方 <code>printf</code> 出來，看看到底出問題那邊是有甚麼東西，結果發現那邊有個 ascii 碼為 <code>0x1A</code> 的字元。上網查了一下發現 Windows 竟然把它當 <code>EOF</code>！我的天啊，太誇張了。這個 Bug 不知道找了多久了，結果問題出在系統上…….</p><p>最後靠別的系統把檔案裡的所有 <code>0x1A</code> 字元都處理掉後，一切就恢復正常了。</p><p>然後自己測試了一下</p><ol><li>寫個字串裡面有 <code>0x1A</code> 的字元到檔案裡</li><li>讀出來比對字元數是否一致</li></ol><h3 id="寫檔"><a href="#寫檔" class="headerlink" title="寫檔"></a>寫檔</h3><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;stdio.h&gt;</span></span></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    FILE* fptr = fopen(<span class="string">"testEOF.txt"</span>, <span class="string">"w"</span>);</span><br><span class="line">    <span class="keyword">int</span> i;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">for</span>(i = <span class="number">0</span> ; i &lt; <span class="number">20</span> ; i++)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">if</span>((i + <span class="number">1</span>) % <span class="number">10</span> == <span class="number">0</span>)</span><br><span class="line">            <span class="built_in">fprintf</span>(fptr, <span class="string">"%c"</span>, <span class="number">0x1A</span>);</span><br><span class="line">        <span class="keyword">else</span> <span class="built_in">fprintf</span>(fptr, <span class="string">"%c"</span>, <span class="string">'a'</span>);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><h3 id="讀檔"><a href="#讀檔" class="headerlink" title="讀檔"></a>讀檔</h3><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;stdio.h&gt;</span></span></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    FILE* fptr = fopen(<span class="string">"testEOF.txt"</span>, <span class="string">"r"</span>);</span><br><span class="line">    <span class="keyword">char</span> c, count = <span class="number">0</span>;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">while</span>(<span class="built_in">fscanf</span>(fptr, <span class="string">"%c"</span>, &amp;c) != EOF)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="built_in">printf</span>(<span class="string">"[%d] %c\n"</span>, (++count),  c);</span><br><span class="line"></span><br><span class="line">    &#125;</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">"Bytes: %d\n"</span>, count);</span><br><span class="line"></span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><h3 id="執行結果"><a href="#執行結果" class="headerlink" title="執行結果"></a>執行結果</h3><p>結果真的在那個字元結束。 太神奇了~捷克</p><p><img alt data-src="https://lh3.google.com/u/2/d/17uUDhOkFsFkffeIwaAEJsKdjqBhAHGeW=w1918-h952-iv1" class="lozad"></p><h3 id="解決方法"><a href="#解決方法" class="headerlink" title="解決方法"></a>解決方法</h3><ol><li>使用 binary 方式讀取檔案，即可避免</li><li>把它 (<code>0x1A</code>) 處理掉</li></ol><h3 id="參考資料"><a href="#參考資料" class="headerlink" title="參考資料"></a>參考資料</h3><ol><li><a href="https://www.cnblogs.com/Donal/archive/2006/08/14/476178.html" target="_blank" rel="noopener">windows 下getc()返回0x1A表示EOF</a> </li><li><a href="https://stackoverflow.com/questions/13582804/why-can-windows-not-read-beyond-the-0x1a-eof-character-but-unix-can" target="_blank" rel="noopener">Why can Windows not read beyond the 0x1A (EOF) character but Unix can?</a></li></ol>]]></content>
+      
+      
+      <categories>
+          
+          <category> 程式 </category>
+          
+          <category> C </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> C </tag>
+            
+            <tag> Programming </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>【基礎篇】C 語言教學</title>
       <link href="/2019/10/11/C-education-2/"/>
       <url>/2019/10/11/C-education-2/</url>
