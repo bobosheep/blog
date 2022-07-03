@@ -3,17 +3,19 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: BoBoSheep World
+title: Bo Bo I'm a Sheep
 subtitle:  Something about me and my life
-description: 讓自己留下腳印，為世界盡一點努力 
-keywords: BoBoSheep, Blog, Programming, Coding, Life, Travel, Sport
-author: Ian Tsai (蔡帛洋)
-language: en
+description: 學海無涯，回頭是岸
+keywords: BoBoSheep, Blog, Programming, Coding, Life, Travel, Sport, Game
+author: Ian Tsai
+language: 
+- zh-tw
+- en
 timezone: Asia/Taipei
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: https://bobosheep.github.io/
+url: https://blog.lilysheep.com/
 root: /
 permalink: :year/:month/:day/:title/
 permalink_defaults:
